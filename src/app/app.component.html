@@ -1,21 +1,23 @@
-<div id="form_wrapper">
-  <div id="form_left">
-      <img src="assets/journal.png" alt="journal">
+<form>
+  <div class="imgcontainer">
+    <i class="fas fa-book"></i>
   </div>
-  <div id="form_right">
-      <h1>Member Login</h1>
-      <div class="input_container">
-          <i class="fas fa-envelope"></i>
-          <input placeholder="Email" type="email" name="Email" id="field_email" class='input_field'>
-      </div>
-      <div class="input_container">
-          <i class="fas fa-lock"></i>
-          <input  placeholder="Password" type="password" name="Password" id="field_password" class='input_field'>
-      </div>
-      <input type="submit" value="Login" id='input_submit' class='input_field'>
-      <span>Forgot <a href="#"> Username / Password ?</a></span>
-      <span id='create_account'>
-          <a href="#">Create your account ➡ </a>
-      </span>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="button">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
   </div>
-</div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <span class="psw">No account yet? <a href="#">Register here</a></span>
+    <div style="clear: both;"></div>
+  </div>
+</form>

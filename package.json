@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-gh": "ng build --prod --base-href=\"https://maekecoolstuff.github.io/bullet-journal/\"",
+    "publish-gh": "angular-cli-ghpages --dir=dist/bullet-journal"
   },
   "private": true,
   "dependencies": {
