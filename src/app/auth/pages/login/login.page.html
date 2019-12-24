@@ -1,0 +1,23 @@
+<form [formGroup]="loginForm">
+    <div class="imgcontainer">
+      <i class="fas fa-book"></i>
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" formControlName="emailAddress" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" formControlName="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="button" (click)="onSubmit()">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <span class="psw">No account yet? <a href="#">Register here</a></span>
+      <div style="clear: both;"></div>
+    </div>
+  </form>
